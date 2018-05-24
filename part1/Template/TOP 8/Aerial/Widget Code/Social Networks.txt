@@ -1,0 +1,6 @@
+<div id="social-media-icons-9" class="cb-sidebar-widget cb-social-media-widget clearfix">
+    <a title="Feeds" href="http://feeds2.feedburner.com/t" target="_blank" class="cb-social-media-icon cb-rss icon-1"></a>
+    <a title="Twitter" href="https://twitter.com/" target="_blank" class="cb-social-media-icon cb-twitter icon-2"></a>
+    <a title="Facebook" href="https://www.facebook.com" target="_blank" class="cb-social-media-icon cb-facebook icon-3"></a>
+    <a title="Google Plus" href="https://plus.google.com/" target="_blank" class="cb-social-media-icon cb-googleplus icon-4"></a>
+</div>

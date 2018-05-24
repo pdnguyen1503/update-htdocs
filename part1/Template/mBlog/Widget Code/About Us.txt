@@ -1,0 +1,10 @@
+<div class="logo-footer"><a href="/">
+
+<img alt="logo" title="teste"  src="http://1.bp.blogspot.com/-uA1YTJh9J6U/VJB2h07jaUI/AAAAAAAAAQw/aOL_bACO0-4/s1600/Logo%2BIB.png" />
+
+</a></div>
+<div class="desc-footer"><p>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+
+</p></div>

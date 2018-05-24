@@ -1,0 +1,26 @@
+#logo{
+  margin-left: 100px;
+}
+
+.rowfooter{
+  width: 100%;
+  background-color: #EB8905;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.facebook {
+  background: #3B5998;
+  padding: 20px;
+  margin-top:30px;
+  margin-left: 100px;
+}
+.social_media_icon > a{
+  text-decoration: none;
+}
+.thongtin{
+  padding-top: 50px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background-color: #e4dede;
+}

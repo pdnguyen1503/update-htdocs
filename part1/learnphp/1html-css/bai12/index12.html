@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pham Dinh Nguyen</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <form>
+      <table>
+        <tr><td colspan="2"><h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1></td></tr>
+        <tr>
+          <td>Họ và Tên</td>
+          <td><input type="text" name="name" id="ten"></td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td><input type="text" name=""></td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td><input type="text" name=""></td>
+        </tr>
+        <tr>
+          <td>Phái</td>
+          <td><input type="radio" name="phái" value="nam" checked>nam<input type="radio" name="phái" value="nu">nu
+        <tr>
+          <td>Nghề Nghiệp</td>
+          <td>
+            <select>
+              <option>Bác sĩ</option>
+              <option>Kỹ sư</option>
+              <option>Giáo viên</option>
+              <option>khác</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn sản phẩm gia tăng</td>
+          <td>
+            <select multiple="multiple">
+              <option>Kem đánh răng</option>
+              <option>Bột giặt</option>
+              <option>Dầu gội đầu</option>
+              <option>Sữa tắm</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Số người dự đoán tham gia</td>
+          <td><input type="text" name=""></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" name="button" value="submit" onclick="myFunction()"</td>
+        </tr>
+        <tr>
+          <td colspan="2"><div id="hienthi"></div></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <script type="text/javascript">
+    function myFunction(){
+      document.getElementById("hienthi").innerText = "Đăng ký thành công"
+    }
+  </script>
+</body>
+</html>

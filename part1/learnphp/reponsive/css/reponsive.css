@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px) {
+    .wp_inner {
+        width: 100%;
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width: 768px;) {
+    body{
+    }
+}
+@media screen and (max-width: 680px) {
+    body{
+    }
+}
+@media screen and (max-width: 480px) {
+    body{
+    }
+}
+@media screen and (max-width: 320px;) {
+    body{
+    }
+}

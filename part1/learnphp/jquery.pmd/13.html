@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai tap 13</title>
+	<link rel="stylesheet" type="text/css" href="chung.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		.tab-wrapper{
+			width: 500px;
+			margin: 50px auto;
+			border: solid 1px #acacac;
+		}
+
+		.tab-wrapper ul{
+			overflow: hidden;
+			background: #aee655;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.tab-wrapper ul li{
+			float: left;
+			list-style: none;
+			padding: 10px 20px;
+			background: #348ec9;
+			border-radius: 10px 10px 0px 0px;
+			margin-right: 5px;
+			margin-top: 5px;
+		}
+
+		.tab-wrapper ul li.active{
+			background: #fff;
+		}
+
+		.tab-wrapper ul li.active a{
+			color: blue;
+		}
+
+		.tab-wrapper ul li a{
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		
+		.tab-content{
+			padding: 20px;
+		}
+
+		.tab-item{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="tab-wrapper">
+		<ul class="tab">
+			<li>
+				<a href="#tab-main-info">Tab 1</a>
+			</li>
+			<li>
+				<a href="#tab-image">Tab 2</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-item" id="tab-main-info">
+				Thêm, sửa, xóa
+			</div>
+			<div class="tab-item" id="tab-seo">
+				Tim kiem, hien thi
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function activeTab(obj){
+				$('.tab-wrapper ul li').removeClass('active');
+				$(obj).addClass('active');
+
+				var id = $(obj).find('a').attr('href');
+
+				$('.tab-item').hide();
+
+				$(id).show();
+			}
+
+			$('.tab li').click(function(){
+				activeTab(this);
+				return false;
+			});
+
+			activeTab($('.tab li:first-childe'));
+		});	
+	</script>
+</body>
+</html>

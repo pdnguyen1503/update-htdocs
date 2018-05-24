@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    color: #006600;
+    font-size:40px;
+}
+h2{
+  text-decoration: underline;
+  font-weight: bold;
+  color:#0000FF;
+}
+#tieu_de{
+  font-height:bold;
+  font-size: 22px;
+}
+
+.parent{
+  background-color:#FFFFCC;
+}
+#p_con1{
+  text-align: center;
+  color:#0000FF;
+}
+#p_con2{
+  text-align: center;
+  color: red;
+  }
+#p_con3{
+  text-align: center;
+  color: green;
+}
+#hr{
+  width: 300px;
+  height:2px;
+}

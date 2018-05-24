@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai tap 9</title>
+	<link rel="stylesheet" type="text/css" href="chung.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<table border="1" align="center">
+		<tr>
+			<td>User Name</td>
+			<td><input id="name" placeholder="Nhap Username" type="name" name="name"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input id="pass" placeholder="Nhap Password" type="password" name="pass"></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="background-color: yellow;"><div id="test">Thong bao</div></td>
+		</tr>
+		<tr>
+			<td><button id="login" type="button" class="btn btn-primary">Login</button></td>
+			<td><button id="logout" type="button" class="btn btn-primary an">Logout</button></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#name').click(function(){
+				$("#name").removeClass('doimau');
+			});
+
+			$('#pass').click(function(){
+				$("#pass").removeClass('doimau');
+			});
+
+			$('#login').click(function(){
+				if($("#name").val() == "" && $("#pass").val() == ""){
+					$("#test").html("Sai thong tin dang nhap!");
+					$("#name").addClass('doimau');
+					$("#pass").addClass('doimau');
+				}
+				else if($("#name").val() == "admin" && $("#pass").val() == "admin")
+				{
+					$("#test").html("Ban da dang nhap thanh cong!");
+					$("#name").css("background-color", "white");
+					$("#pass").css("background-color", "white");
+					$("#login").toggleClass('an');
+					$("#logout").toggleClass('hien');
+					$('#logout').toggleClass('an');
+				}
+				else
+				{
+					alert("Ban nhap sai thong tin!");
+					$("#name").val("");
+					$("#pass").val("");
+				}
+			});
+
+			$('#logout').click(function(){
+				if($("#name").val() == "admin" && $("#pass").val() == "admin"){
+					$("#test").html("Thong Bao");
+					$("#login").toggleClass('an');
+					$("#logout").toggleClass('hien');
+					$("#logout").toggleClass('an');
+					$("#name").val("");
+					$("#pass").val("");
+					$("#name").removeClass('doimau');
+					$("#pass").removeClass('doimau');
+
+				}
+				else if($("#name").val() == "" && $("#pass").val() == "")
+				{
+					$("#test").html("Ban da dang nhap thanh cong!");
+				}
+			});
+
+
+		});
+	</script>
+</body>
+</html>

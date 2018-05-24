@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai tap 6</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>Name</td>
+			<td><input id="text" type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" name="pass"></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><button type="button" class="btn btn-primary">Submit</button></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(){
+				if($("#text").val() == ""){
+					$("#test").addClass("error");
+				}
+				else
+				{
+					alert("Ban da nhap thanh cong!");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tìm text - báo lỗi</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <label>Nhập tên:</label>
+    <input type="text" name="name" id="input">
+    <p id="error"></p>
+    <input type="button" name="check" id="check" value="check">
+  </div>
+  <script type="text/javascript">
+    var value_text = $("#input").val();
+    $(document).ready(function(){
+      $('#check').click(function(){
+        if (value_text == "") {
+         // $("#error").addClass(index,){
+         //  var addClass;
+         //  $("#error").text("loi chua nhap du lieu");
+         //  return addClass;
+         // }
+         alert("loi");
+         // $("#error").text("loi chua nhap du lieu");
+        }else{
+          alert('name của bạn là' + value_text);
+        };
+      });
+    });
+  </script>
+</body>
+</html>

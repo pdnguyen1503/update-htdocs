@@ -1,0 +1,16 @@
+h2{
+  text-align: center;
+  color: #ea19dd;
+}
+#font{
+  background-color: #ea19dd;
+}
+#ul1{
+  list-style-type: square;
+}
+#ul2{
+  list-style-type: circle;
+}
+img {
+  float: left;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <table>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+    </tr>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+    </tr>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+    </tr>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+    </tr>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+    </tr>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+    </tr>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+      <td><a href=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="">1</a></td>
+      <td><a href="">2</a></td>
+      <td><a href="">3</a></td>
+      <td><a href="">4</a></td>
+      <td><a href="">5</a></td>
+      <td><a href="">6</a></td>
+      <td><a href="">7</a></td>
+      <td><a href="">8</a></td>
+    </tr>
+  </table>
+  <input type="button" name="hide" id="btn_hide" value="hide">
+  <input type="button" name="show" id="btn_show" value="show">
+  <input type="button" name="toggle" id="btn_toggle" value="toggle">
+  <script src="jquery-3.2.1.min.js"></script><script type="text/javascript">
+  $(document).ready(function(){
+    var is_x = true; // dat bien
+    $('#btn_hide').click(function(){
+      $('a').hide();
+    });
+    // khi nhan nút btn_hide thì các thẻ a sẽ ẩn đi, dựa vào hàm hide();
+    $('#btn_show').click(function(){
+      $('a').show();
+    });
+    // khi nhấn nút btn_show thì các thẻ a sẽ hiện lên, dựa vào hàm show()
+    $('td').click(function(){//khi các thẻ td được nhấn click
+      if (is_x) {
+        $(this).html('<a>X</a>'); // thay doi cac noi dung trong thẻ a này thành thẻ <a> X </a>
+        // nếu biến is_x = true
+        is_x = false;
+      }else{
+        $(this).html('<a>O</a>');// thay doi cac noi dung trong thẻ a này thành thẻ <a> O </a>
+      }
+      is_x = true; //hay chuyern is_x = true
+       // biến is_x sẽ thay đổi khác is_x, mà khi " !is_x thì là khác true, thì sẽ là false, và ngược lại, sẽ thay đổi giá trị nó là true- false  "
+    });
+  });
+</script>
+</body>
+</html>

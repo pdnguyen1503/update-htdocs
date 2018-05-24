@@ -1,0 +1,11 @@
+.content{
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid blue;
+  margin: auto;
+}
+h3{
+  background-color: yellow;
+  color: red;
+}

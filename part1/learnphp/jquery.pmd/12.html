@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai tap 12</title>
+	<link rel="stylesheet" type="text/css" href="chung.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 16px;
+        }
+ 
+        .ulWrapper
+        {
+            width: 450px;
+            display: block;
+            float: left;
+            background-color: #0092D8;
+            padding: 10px 10px 10px 30px;
+        }
+ 
+            .ulWrapper li
+            {
+                color: #fff;
+                width: 100%;
+                display: block;
+                float: left;
+            }
+ 
+                .ulWrapper li a
+                {
+                    color: #fff;
+                    text-decoration: none;
+                }
+ 
+                    .ulWrapper li a:hover
+                    {
+                        text-decoration: underline;
+                         color: yellow;
+                    }
+ 
+                    .ulWrapper li a.aParent
+                    {
+                        font-weight: bold;
+                        width: 100%;
+                        display: block;
+                        float: left;
+                        padding: 5px 0;
+                    }
+ 
+        .ulChildrent
+        {
+            width: 100%;
+            display: block;
+            float: left;
+        }
+ 
+            .ulChildrent li
+            {
+                padding: 3px 0;
+                width: 100%;
+                display: block;
+                float: left;
+            }
+ 
+                .ulChildrent li a
+                {
+                    font-size: 12px;
+                }
+    </style>
+</head>
+<body>
+	<div style="padding: 20px;">
+            <h1>Menu Accordition</h1>
+            <ul class="ulWrapper">
+                <li>
+                    <a href="javascript:void(0)" class="aParent">HTML & CSS</a>
+                    <ul class="ulChildrent tabHTML_Content">
+                        <li>
+                           <a href="#" target="_blank">&bull;&nbsp;Tạo file reset css cho website</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Tạo menu nhanh chóng với CSS Menu Maker</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Top 10 Add-on Firefox dành cho người thiết kế web</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Tạo file reset css cho website</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Tạo menu nhanh chóng với CSS Menu Maker</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Top 10 Add-on Firefox dành cho người thiết kế web</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="aParent">Thiết kế web</a>
+                    <ul class="ulChildrent">
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Xu hướng thiết kế website năm 2013</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Những thiết kế trang web lỗi 404 rất ấn tượng</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Xu hướng thiết kế website năm 2013</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Những thiết kế trang web lỗi 404 rất ấn tượng</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="aParent">Jquery</a>
+                    <ul class="ulChildrent">
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Tổng hợp các jQuery plugin về thanh cuộn</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Tổng hợp jQuery giúp bạn tối ưu hoá Layout</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Tổng hợp các jQuery plugin về thanh cuộn</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Tổng hợp jQuery giúp bạn tối ưu hoá Layout</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="aParent">ASP.NET & ASP MVC</a>
+                    <ul class="ulChildrent">
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Nén HTML và tối ưu hóa mã javascript cho website Asp.Net</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">&bull;&nbsp;Một số cấu hình file web.config an toàn</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        	$(document).ready(function () {
+            //Ẩn nội dung các menu con, trừ cái đầu tiên
+            $('.ulWrapper li:gt(0) .ulChildrent').hide();
+            //Sự kiện khi click vào 1 men cha
+            $('.aParent').click(function () {
+                //ẩn toàn bộ các menu con
+                $('.ulChildrent').slideUp();
+                //hiện menu con của menu cấp 1 hiện tại được click
+                $(this).parent('li').find('.ulChildrent').slideDown();
+	            });
+	        });
+        </script>
+</body>
+</html>

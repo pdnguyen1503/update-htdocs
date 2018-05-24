@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Chọn option trong phần select.</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+  <body>
+    <select id="country" size="10">
+      <option>Đà Nẵng</option>
+      <option>Cần Thơ</option>
+      <option>Hà Nội</option>
+      <option>Vinh</option>
+      <option>Hồ Chí Minh</option>
+    </select>
+    <select id="thanhpho" size="10">
+      <option>Đà Nẵng</option>
+      <option>Cần Thơ</option>
+      <option>Hà Nội</option>
+      <option>Vinh</option>
+      <option>Hồ Chí Minh</option>
+    </select>
+    <button>Select option</button>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('button').click(function(){
+          $('#country > option').css("color", "blue");
+        });
+      });
+    </script>
+  </body>
+</html>

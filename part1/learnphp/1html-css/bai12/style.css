@@ -1,0 +1,21 @@
+button{
+  width: 40px;
+}
+form{
+  margin: 0 auto;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+}
+table, tr, td{
+  border-collapse: collapse;
+  border: 1px solid red;
+   border-spacing: 5px;
+}
+table, tr {
+  background-color: #57ead6;
+}
+th, td{
+  padding: 5px;
+}
+

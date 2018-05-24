@@ -1,0 +1,25 @@
+#btn_search{
+  background-color: #0072DB;
+  padding: 10px;
+}
+.col-sm-7 table tr td{
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.img{
+  display: inline-block;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.col-sm-5 a,input{
+  display: block;
+}
+.col-sm-5 a{
+  text-decoration: none;
+}
+#Celery{
+  background:#0072DB;
+  padding: 10px;
+  width: 90%;
+  color: white;
+}

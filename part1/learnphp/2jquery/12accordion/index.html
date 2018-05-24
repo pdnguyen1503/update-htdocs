@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>bai 12: accordion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- include jquery library in head -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- cdn the hien ban hien hanh moi nhat va cu, chua datepicker -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="content" >
+    <h3>Section 1</h3>
+    <div>
+      <p>Chris Khoa Nguyễn được thông tin trở thành cố vấn Bộ Tài chính Anh ở tuổi 24. Sau đó, 9X đính chính trên trang cá nhân đến tháng 3, anh mới bắt đầu công việc với vai trò Junior Policy Adviser (tạm dịch: Cố vấn tài chính cấp thấp), giống như công việc thực tập.</p>
+    </div>
+    <h3>Section 2</h3>
+    <div>
+      <p>Thông tin hiện nay khiến người đọc cho rằng Chris Khoa Nguyễn sẽ đảm nhận vị trí rất quan trọng trong Bộ Tài chính Anh. Thực tế, đây là vị trí Junior, không đòi hỏi quá nhiều kinh nghiệm.</p>
+    </div>
+    <h3>Section 3</h3>
+    <div>
+      <p>Theo thông tin tuyển dụng, đó thực chất là chương trình dành cho sinh viên đã tốt nghiệp hoặc sẽ tốt nghiệp trong năm 2018 (Policy Adviser Graduate Progamme).
+
+Những người được nhận sẽ tham gia quá trình vừa học vừa làm (on-the-job learning) dưới sự hướng dẫn của quản lý và các cố vấn khác nhằm rèn luyện, nâng cao kiến thức chuyên môn, kỹ năng cần có cho công việc cố vấn chính sách.</p>
+    </div>
+    <h3>Section 4</h3>
+    <div>
+      <p>Chris Khoa Nguyễn lớn lên ở CH Séc, hiện sống tại London (Anh).
+
+Tháng 8/2017, 9X tốt nghiệp ĐH Exeter, Anh. Chris trúng tuyển thực tập sinh từ Google, Apple, Goldman Sachs, BlackRock, Bank of England và HSBC năm 2016. 9X thực tập tại BlackRock từ tháng 6/2016 đến tháng 9/2017.
+
+Như vậy, 9X là thực tập sinh ở những công ty này chứ không phải đảm nhận vị trí quan trọng. </p>
+    </div
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".content").accordion();
+    })
+  </script>
+</body>
+</html>

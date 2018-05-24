@@ -1,0 +1,17 @@
+table,tr,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table{
+  width: 250px;
+  height: 150px;
+}
+td.left{
+  width: 40%;
+}
+td.right{
+  width: 60%;
+}
+#thongbao{
+  background-color: yellow;
+}

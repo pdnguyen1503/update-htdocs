@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>chọn Img trong id menu</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="menu">
+      <label>Img1</label>
+      <img src="anh1.jpg">
+      <label>Img2</label>
+      <img src="anh2.jpg">
+      <label>Img3</label>
+      <img src="anh3.jpg">
+  </div>
+  <div>
+      <input type="button" value="hide" id="hide">
+      <input type="button" value="show" id="show">
+  </div>
+  <script type="text/javascript">
+    $('#hide').click(function(){
+      $('div.menu, img').hide();
+    });
+    $('#show').click(function(){
+      $('.menu > img').show();
+    });
+  </script>
+</body>
+</html>

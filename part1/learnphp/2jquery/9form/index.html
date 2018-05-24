@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validation jquery form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- CND ajax jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <table align="center">
+      <!-- phần username -->
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" placeholder="username" name="username" id="username" minlength="2" required></td>
+    </tr>
+    <!-- phần password -->
+    <tr>
+      <td>Password:</td>
+      <td><input type="text" placeholder="password" name="password" id="password" required></td>
+    </tr>
+    <!-- phần hiển thiji thành công -->
+    <tr id="hienthi">
+      <td colspan="2" id="thongbao">Thong bao</td>
+    </tr>
+    <!-- phần login -->
+    <tr>
+      <td colspan="2"><input id="login" type="button" name="login" value="login"></td>
+    </tr>
+  </table>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var name = $("#username").val();
+      var pass = $("#password").val();
+      $("#login").click(function(){
+        if (name == "" || pass == "") {
+          $("#username").css("background-color", "red");
+          $("#password").css("background-color", "red");
+          $("#thongbao").text("Dien name va password vao");
+        }else{
+          $("#thongbao").text("dang nhap thanh cong")
+        }
+      })
+    });
+  </script>
+</body>
+</html>

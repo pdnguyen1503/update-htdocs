@@ -1,0 +1,65 @@
+#logo{
+  margin-left: 100px;
+}
+.img-post > img{
+  max-width: 100%;
+  width: 100%;
+  height: 250px;
+}
+.card{
+  padding: 20px;
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.input-comment *{
+  size: 100%;
+}
+h5{
+  font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.list-post {
+  margin-top: 20px;
+}
+.comment{
+  display: block
+}
+.button-comment button{
+  background-color: #16aee1;
+}
+.card-body a{
+    padding: 1.25rem;
+    display: block;
+
+}
+.rowfooter{
+  width: 100%;
+  background-color: #EB8905;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.facebook {
+  background: #3B5998;
+  padding: 20px;
+  margin-top:30px;
+  margin-left: 100px;
+}
+.social_media_icon > a{
+  text-decoration: none;
+}
+.thongtin{
+  padding-top: 50px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background-color: #e4dede;
+}
+.caterory{
+  margin-top:0px;
+}

@@ -1,0 +1,29 @@
+
+img{
+  float: left;
+  height: 100px;
+  width: 200px;
+}
+div {
+    border: 1px solid red;
+}
+body{
+  background-color: #FFEDCA;
+}
+h1{
+  color: #CC6600;
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+}
+#title{
+  background-color: #CC6600;
+  color: #FFFFFF;
+}
+#le{
+  background-color: #FFFFFF;
+}
+#chan{
+  background-color: #FFEDCA;
+}

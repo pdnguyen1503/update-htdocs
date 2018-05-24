@@ -1,0 +1,58 @@
+.header{
+  height: 50px;
+  background-color: #FFBA00;
+  position: relative;
+}
+.menu{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+  border-bottom: 1px solid transparent;
+  border-color: #e3b802;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.container{
+  min-width: 320px;
+  width: 970px;
+}
+.chotot{
+  float: left;
+  width: 120px;
+  height: 45px;
+}
+.anh{
+  background-image: url('https://static.chotot.com.vn/storage/C2C_CDN_PRODUCTION/37f1808c5aa3c6b4d873d4366947ec4b.png');
+  height: 45px;
+  background-size: auto 37px;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  width: 100%;
+  margin-left: 10px;
+}
+.dangtin{
+  height: 45px;
+  float: right;
+  padding-left: 10px;
+}
+#dangtin{
+  height: 35px;
+  line-height: 35px;
+  width: 110px;
+  text-align: center;
+  font-weight: bold;
+  background: #fc9807;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 8px;
+}
+/*@media (min-width: 1200px)*/
+.container {
+    width: 1078px;
+}

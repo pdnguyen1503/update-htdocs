@@ -1,0 +1,32 @@
+.wp_inner{
+    width: 1024px;
+    margin: 0 auto;
+}
+#list_more li{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+#main_menu li{
+    display: inline-block;
+    padding: 20px;
+    background-color: yellow
+}
+#list_more li a img{
+    height: 100px;
+}
+#content{
+    width: 70%;
+}
+#right{
+    float: right;
+    width: 30%;
+    margin-top: -800px;
+}
+.p1{
+    background-color: red;
+}
+.p2{
+    background-color: blue
+}

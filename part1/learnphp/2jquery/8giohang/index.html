@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Them gio hang</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <p>gio hang la: <span id="soluong">0</span></p>
+  <input type="button" value="themhang" id="themhang">
+  <script type="text/javascript">
+    var soluong = $('#soluong').text();
+
+    $(document).ready(function(){
+        $('#themhang').click(function(){
+          soluong = parseInt(soluong) + 1;
+          // alert('soluong' + soluong)
+          // $('#soluong').text() = soluong.valueOf();
+          $('#soluong').html(soluong);
+          console.log(soluong);
+        });
+    });
+  </script>
+</body>
+</html>

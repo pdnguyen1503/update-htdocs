@@ -1,0 +1,18 @@
+body{
+  margin: 0 auto;
+  /*margin: 300px;*/
+  width: 500px;
+  height: 500px;
+  background-image: url(img/vanly.jpg);
+  background-size: 300px 350px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #A06D21;
+  color:#FFFFFF;
+  text-align: center;
+}
+h1{
+  color: #FFCC00;
+  text-align:center;
+}

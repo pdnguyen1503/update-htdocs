@@ -1,0 +1,81 @@
+/**
+* Eric Meyer&#39;s Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1;display:block}
+*{margin:0;padding:0}
+html{display:block}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:&#39;&#39;;content:none}
+table{border-collapse:collapse;border-spacing:0}
+/* CSS FRAMEWORK */
+strong,b{font-weight:bold}
+cite,em,i{font-style:italic}
+a:link{color:#0099cc;text-decoration:none;outline:none;transition:all 0.25s;-moz-transition:all 0.25s;-webkit-transition:all 0.25s}
+a:visited{color:#0099cc;text-decoration:none}
+a:hover{color:#006c8e;;text-decoration:none}
+a img{border:none;border-width:0;outline:none}
+abbr,acronym{border-bottom:1px dotted;cursor:help}
+sup,sub{vertical-align:baseline;position:relative;top:-.4em;font-size:86%}
+sub{top:.4em}
+small{font-size:86%}
+kbd{font-size:80%;border:1px solid #999;padding:2px 5px;border-bottom-width:2px;border-radius:3px}
+mark{background-color:#ffce00;color:black}
+p,blockquote,pre,table,figure,hr,form,ol,ul,dl{margin:1.5em 0}
+hr{height:1px;border:none;background-color:#666}
+h1,h2,h3,h4,h5,h6{font-weight:bold;line-height:normal;margin:0 0 0.6em}
+h1{font-size:200%}
+h2{font-size:180%}
+h3{font-size:160%}
+h4{font-size:140%}
+h5{font-size:120%}
+h6{font-size:100%}
+ol,ul,dl{margin:.5em 0 .5em 3em}
+ol{list-style:decimal outside}
+ul{list-style:disc outside}
+li{margin:.5em 0}
+dt{font-weight:bold}
+dd{margin:0 0 .5em 2em}
+input,button,select,textarea{font:inherit;font-size:100%;line-height:normal;vertical-align:baseline}
+textarea{display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+pre,code{font-family:"Courier New",Courier,Monospace;color:inherit}
+pre{white-space:pre;word-wrap:normal;overflow:auto}
+blockquote{background:#f0f0f0;margin-left:2em;margin-right:2em;padding:1em 1em;font-style:italic;font-size:110%}
+img{max-width:100%;height:auto;border:0}
+iframe{max-width:100%}
+table{border-collapse:collapse;border-spacing:0}
+.clear{clear:both}
+.clear:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+body{margin:0 auto;font-family:Arial,sans-serif;font-size:15px;line-height:1.6em;color:#333;background:#eef3f6;overflow-x:hidden}
+#header-content{margin:auto;width:100%;height:65px;background-color:#7bb0e7;}
+#top-wrapper{height:65px;width:920px;margin:auto;position:relative}
+#logo{float:left;max-height:100%;min-height:50px;min-width:260px;max-width:10%;margin-right:18px}
+#logo a{font-size:24px;font-weight:bold;text-transform:uppercase;float:left;color:#fff}
+#logo h1{float:left;margin-top:20px}
+#logo img{float:left}
+.indzign2015{float:right;margin-top:20px;font-size:16px;font-weight:bold;color:rgba(255,255,255,.6)}
+.container{background:#fff;max-width:920px;margin:auto;padding:30px}
+.container  .img-center{margin:0 auto;text-align:center}
+h2.indz-subtitle{color:#585858;font-size:22px;margin:30px 0 20px;padding:20px 0 8px;border-bottom:1px solid #eee}
+.note-green{margin:1.5em 0;padding:16px;background-color:#D3F5D3;color:#159415}
+.note-yellow{margin:1.5em 0;padding:12px;background-color:#fcf8e3;color:#b58d47}
+.note-red{margin:1.5em 0;padding:16px;background-color:#FCAFAF;color:#C92121}
+.mark-green{background-color:#A4DDA4!important;color:#fff;}
+.mark-blue{background-color:#A1DAFF!important;color:#fff;}
+.mark-red{background-color:#FF9999!important;color:#fff;}
+.mark-black{background-color:#333333!important;color:#fff;}
+.mark-gray{background-color:#EEEEEE!important;color:#fff;}
+.mark-yellow{background-color:#E4E437!important;color:#fff;}
+/* back to top */
+#back-to-top{background:#7bb0e7;color:#fff;padding:8px 10px;font-size:20px;opacity:.7;}
+#back-to-top:hover{opacity:1}
+.back-to-top{position:fixed!important;position:absolute;bottom:30px;right:30px;-webkit-transform:translateZ(0);transform:translateZ(0);z-index:99}
+footer{margin:auto;padding:30px 0;width:100%;background-color:#F5F5F5;border-top:1px solid #e5e5e5;text-align:center}
+
+
+
+

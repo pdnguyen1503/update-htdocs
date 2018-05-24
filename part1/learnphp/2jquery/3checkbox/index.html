@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tìm checkbox va giá trị checked</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <table class="list">
+      <h3> nhấn vào ô vuông nhỏ đẻ đánh dấu, hoặc bỏ đánh dấu.</h3>
+      <tr>
+        <td><input type="checkbox" name="check1" >check_box_1</td>
+        <td><input type="checkbox" name="check2" >check_box_2</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="check3" >check_box_3</td>
+        <td><input type="checkbox" name="check4" >check_box_4</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="check5" >check_box_5</td>
+        <td><input type="checkbox" name="check6" >check_box_6</td>
+      </tr>
+    </table>
+    <button id="check">check</button>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#check').click(function(){
+        if($('input[type = "checkbox"]:checked').prop("checked") == true){
+          alert("da check");
+        }else{
+          alert("chua");
+        }
+      });
+      // function to notification checked or not checked
+    });
+  </script>
+</body>
+</html>

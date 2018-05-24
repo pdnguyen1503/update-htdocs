@@ -1,0 +1,77 @@
+.menutop{
+  background-color: #FFBA00;
+  height: 50px;
+  /*border-radius: 10px;*/
+}
+.container{
+  min-width: 320px;
+  width: 970px;
+}
+.logo{
+  padding-top: 5px;
+  width: 120px;
+  float: left;
+  height: 45px;
+}
+.the-i{
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.menu a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.menu{
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+}
+.menu:hover{
+  background: #E4B801;
+}
+.round{
+  color: #000;
+  /*padding-top: 10px;*/
+}
+.iconmenu{
+
+  padding-top: 10px;
+  font-size: 26px;
+  max-width: 100%;
+  float: left;
+  /*padding-left: 10px*/
+}
+.textmenu{
+      font-size: 15px;
+    margin-left: 10px;
+    /*text-decoration: none;*/
+}
+.Dangtin{
+  background: #FC9807;
+  border-radius: 5px;
+  height: 33px;
+  width: 100px;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.rowmenu_body{
+  border: 1px solid #CACACA;
+  margin-top: 100px;
+}
+.rowmenu1 a{
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #1b1616;
+  /*margin-top: 10px;*/
+}
+.rowmenu1{
+  border: 1px solid #CACACA;
+}
+.rowmenu2 input{
+  margin: 20px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bai1: An hien cac block</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <p class="hide">click vao button để ẩn hay hiện thẻ này đây</p>
+  <input type="button" id="btn_button_hide" value="hide" >
+  <input type="button" id="btn_button_show" value="show" >
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#btn_button_hide').click(function(){
+        $('.hide').hide();
+      });
+      // click button to show
+      $('#btn_button_show').click(function(){
+        $('.hide').show();
+      });
+    });
+  </script>
+
+</body>
+</html>
