@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', 'client\HomeController@Admin');
+Route::get('/admin', 'Admin\HomeController@Admin');
+Route::get('/admin/getcategory', 'Admin\CategoriesController@GetListCategories');

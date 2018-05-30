@@ -106,7 +106,7 @@
                     <div class="col-lg-12">
 
 
-                        @yield('')
+                        @yield('categories')
 
                             <script src="../vendor/jquery/jquery.min.js"></script>
 
